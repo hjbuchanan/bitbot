@@ -6,14 +6,20 @@
 		"description": "To get help on all supported commands, or a specified command"
 	},
 
-	"gem": {
-		"alias": [],
-		"endpoint": "https://rubygems.org/api/v1/gems/{gem}.json",
-		"help": "gem [gem-name]",
-		"description": "Fetches details of the specified Ruby gem"
-	},
-
 	"error": {
 		"exclude": true
+	},
+
+	"price": {
+		"alias": ["show-me-the-money"],
+		"endpoint": "https://blockchain.info/ticker",
+		"description": "fetches bitcoin prices"
+	},
+
+	"convert": {
+		"alisas" :[],
+		"help": "convert <currency-code> <amount-to-convert>",
+		"endpoint": "https://blockchain.info/tobtc",
+		"description": "returns currency value in bitcoin"
 	}
 }
